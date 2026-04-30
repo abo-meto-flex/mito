@@ -1,54 +1,9 @@
-"use client";
-
 export default function Home() {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert("جاهزين نربط Google Sheets يا بطل... قصدي يا فورمال 😂");
-  };
-
   return (
-    <main className="min-h-screen bg-black text-white flex items-center justify-center p-4">
-      <div className="w-full max-w-md bg-gray-900 p-8 rounded-2xl border border-gray-800 shadow-2xl">
-        
-        <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold mb-2">ميتو 🚀</h1>
-          <p className="text-gray-400">انضم لجيش الـ 473 فليكس</p>
-        </div>
-
-        <form onSubmit={handleSubmit} className="space-y-5">
-          <div>
-            <input 
-              type="text" 
-              name="name"
-              placeholder="الاسم الكامل" 
-              required
-              className="w-full p-4 rounded-xl bg-gray-800 text-white border border-gray-700 focus:border-green-500 focus:ring-1 focus:ring-green-500 outline-none transition"
-            />
-          </div>
-          
-          <div>
-            <input 
-              type="email" 
-              name="email"
-              placeholder="البريد الإلكتروني" 
-              required
-              className="w-full p-4 rounded-xl bg-gray-800 text-white border border-gray-700 focus:border-green-500 focus:ring-1 focus:ring-green-500 outline-none transition"
-            />
-          </div>
-          
-          <button 
-            type="submit"
-            className="w-full p-4 rounded-xl bg-green-500 text-black font-bold text-lg hover:bg-green-400 active:scale-95 transition"
-          >
-            سجل الآن
-          </button>
-        </form>
-
-        <p className="text-center text-gray-600 text-xs mt-6">
-          بالتسجيل أنت توافق على الانضمام للجيش 💎
-        </p>
-
-      </div>
-    </main>
+    <form>
+      <input type="text" placeholder="الاسم" />
+      <input type="email" placeholder="الإيميل" />
+      <button>سجل</button>
+    </form>
   )
 }
